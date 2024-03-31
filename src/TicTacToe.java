@@ -33,7 +33,7 @@ public class TicTacToe {
                     move = false;
                     row = SafeInput.getRangedInt(scan,"Player 1, what row would you like to put your X in [Top = 1, Middle = 2, Bottom = 3]", 1,3);
                     row--;
-                    col = SafeInput.getRangedInt(scan,"Player 1, what column would you like to put your X in [Top = 1, Middle = 2, Bottom = 3]", 1,3);
+                    col = SafeInput.getRangedInt(scan,"Player 1, what column would you like to put your X in [Left = 1, Middle = 2, Right = 3]", 1,3);
                     col--;
                     if (isValidMove(row, col)) {
                         board[row][col] = "X";
@@ -58,7 +58,7 @@ public class TicTacToe {
                         move2 = false;
                         row = SafeInput.getRangedInt(scan,"Player 2, what row would you like to put your X in [Top = 1, Middle = 2, Bottom = 3]", 1,3);
                         row--;
-                        col = SafeInput.getRangedInt(scan,"Player 2, what column would you like to put your X in [Top = 1, Middle = 2, Bottom = 3]", 1,3);
+                        col = SafeInput.getRangedInt(scan,"Player 2, what column would you like to put your X in [Left = 1, Middle = 2, Right = 3]", 1,3);
                         col--;
                         if (isValidMove(row, col)) {
                             board[row][col] = "O";
