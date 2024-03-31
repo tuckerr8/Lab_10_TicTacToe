@@ -8,6 +8,7 @@ public class TicTacToe {
 
     //Main program
     public static void main(String[] args) {
+
         //Initialize scanner, booleans, and ints
         Scanner scan = new Scanner(System.in);
         boolean again;
@@ -39,7 +40,7 @@ public class TicTacToe {
                         displayBoard();
                         move = true;
                     } else {
-                        System.out.println("Invalid move. Please Try Again");
+                        System.out.println("Invalid move. Please try again");
                     }
 
                     //Winning move check or tying move check for player 1
